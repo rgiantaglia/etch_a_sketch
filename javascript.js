@@ -29,6 +29,15 @@ btn.addEventListener('click', function() {
 
                 const divRow = document.createElement('div');
                 divRow.classList.add('square');
+
+                let color = 0;
+                divRow.addEventListener('mouseover', function (event2) {
+                color++
+                let a = color/10;
+                console.log(a);
+                    divRow.setAttribute('style', `background-color: rgba(0, 0, 0, ${a})`);
+                })
+      
                 div.appendChild(divRow);
                 
             };
@@ -41,10 +50,21 @@ btn.addEventListener('click', function() {
 
 const hover = document.querySelector('#container');
 
-hover.addEventListener('mouseover', function(event) {
+//let color = 0;
+//hover.addEventListener('mouseover', function(event) {
 
-    event.target.style.backgroundColor = 'red';
-    document.getElementById('container').style.backgroundColor = 'transparent';
+    //event.target.style.backgroundColor = '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6);
+    //color++
+    ///let a = color/10;
+    //console.log(a);
 
-});
+
+   // event.target.style.backgroundColor = `rgba(0, 0, 0, ${a})`;
+    
+    //event.target.style.opacity = .2;
+   /// document.getElementById('container').style.backgroundColor = 'transparent';
+    
+//});
+
+
 
