@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100%
+}
+
+#container {
+    border: black solid 5px;
+    width: 50vw;
+    height: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.square {
+    width: 200px;
+    display: flex;
+    flex-grow: 1;
+    border: red solid 1px;
+}
+
