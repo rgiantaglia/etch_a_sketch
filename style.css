@@ -5,6 +5,12 @@ body {
     height: 100%
 }
 
+#mainButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #container {
     border: black solid 5px;
     width: 50vw;
@@ -16,7 +22,16 @@ body {
 
 #btn {
     width: auto;
-    margin: 20px;
+    height: 27px;
+    margin-top: 15px;
+}
+
+#numberSqr{
+    width: 30px;
+    height: 27px;
+    margin: 15px;
+    justify-content: center;
+    text-align: center;
 }
 
 .row {
@@ -33,4 +48,20 @@ body {
 
 #colors > *{
     margin: 0 5px 20px 5px;
+    height: 27px;
+}
+
+#colors {
+    display: flex;
+    justify-content: center;
+}
+
+#solidButton {
+    display: flex;
+    gap: 10px;
+}
+
+#btnSolid {
+    display: flex;
+    align-items: center;
 }
